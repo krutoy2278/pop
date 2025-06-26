@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+     font-family: "Montserrat", sans-serif;
+     font-size: 25px;
+}
+
+header{
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Стили для блоков с продуктами */
+.block1, .block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 700px;
+}
+
+.block1 img, .block2 img {
+    width: 550px;
+    height: 550px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.block1 p, .block2 p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Стили для цен (используем псевдоэлемент для добавления "цена:") */
+.block1 p:last-child::before,
+.block2 p:last-child::before {
+    content: "цена: ";
+}
+
+/* Стили для ссылки "Заказать" */
+a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* Стили для примечания */
+.ps {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 5px 0;
+}
